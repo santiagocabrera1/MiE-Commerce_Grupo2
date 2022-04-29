@@ -13,45 +13,11 @@
 
 main{
     background: linear-gradient(to bottom, #0CB093, #0CB093 50%, #eee 5%, #ffffff 75%);
+    padding-top: 20px;
 
 }
 
-.registerForm{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    max-width: 500px;
-    margin: auto;
-    padding: 100px 30px;
-    border-radius: 16px;
-    background: #FFFFFF;
-}
 
-
-.registerForm h2{
-    width: 100%;
-    font-weight: 400px;
-    font-size: 32px;
-}
-
-
-form input{
-    width: 100%;
-    border-radius: 16px;
-    padding: 15px 10px;
-    margin: 10px 0px;
-    border: 1px solid black;
-}
-
-form button{
-    width: 100%;
-    border-radius: 16px;
-    padding: 15px 10px;
-    margin: 10px 0px;
-    background: #494F51;
-
-}
 
 .account{
     display: flex;
