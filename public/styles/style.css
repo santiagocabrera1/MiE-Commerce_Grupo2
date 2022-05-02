@@ -1,3 +1,14 @@
+:root{
+    --principal-white: rgba(255,255,255,1);
+    --principal-lightGrey: rgba(153,153,153,1);
+    --principal-mediumGrey: rgba(245,245,245,1);
+    --transparent-white: rgba(255,255,255,0.45);
+    --principal-darkGrey: rgba(73,79,81,1);
+    --principal-green: rgba(12,176,147,1);
+    --principal-black: rgba(0,0,0,1);
+    --principal-red: rgba(255,0,0,1);
+}
+
 *{
     padding: 0px;
     margin: 0px;
@@ -17,8 +28,6 @@ main{
 
 }
 
-
-
 .account{
     display: flex;
     justify-content: center;
@@ -26,33 +35,3 @@ main{
     margin: 15px 0px;
 }
 
-.footerContainer{
-    background: rgba(255, 255, 255, 0.25);
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 40px;
-}
-
-.box1 ul{
-    display: flex;
-    gap: 20px;
-}
-
-.box1 ul li{
-    list-style: none;
-}
-
-.box2{
-    color: #999999;
-    font-size: 12px;
-}
-
-.box3 ul{
-    display: flex;
-    gap: 20px;
-}
-
-.box3 ul li{
-    list-style: none;
-    color: #999999;font-size: 12px;
-}
