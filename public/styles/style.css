@@ -1,3 +1,14 @@
+:root{
+    --principal-white: rgb(255,255,255);
+    --principal-lightGrey: rgb(153,153,153);
+    --principal-mediumGrey: rgb(245,245,245);
+    --transparent-white: rgb(255,255,255);
+    --principal-darkGrey: rgb(73,79,81);
+    --principal-green: rgb(12,176,147);
+    --principal-black: rgb(0,0,0);
+    --principal-red: rgb(255,0,0);
+}
+
 *{
     padding: 0px;
     margin: 0px;
@@ -6,7 +17,7 @@
 }
 
 .headerContainer{
-    background-color: gba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.25);
     padding: 16px 16px;
     backdrop-filter: blur(4px)
 }
@@ -26,33 +37,12 @@ main{
     margin: 15px 0px;
 }
 
-.footerContainer{
-    background: rgba(255, 255, 255, 0.25);
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 40px;
+
+
+.card {
+    padding: 6px;
+    border-radius: 14px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba( 0, 0, 0, 0.5);
 }
 
-.box1 ul{
-    display: flex;
-    gap: 20px;
-}
-
-.box1 ul li{
-    list-style: none;
-}
-
-.box2{
-    color: #999999;
-    font-size: 12px;
-}
-
-.box3 ul{
-    display: flex;
-    gap: 20px;
-}
-
-.box3 ul li{
-    list-style: none;
-    color: #999999;font-size: 12px;
-}
