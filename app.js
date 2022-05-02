@@ -16,7 +16,7 @@ app.use(express.static("public"));
 
 // set view engine
 app.set("view engine", "ejs");
-app.set("view", "./views");
+app.set("views", "./views");
 
 // para que los formularios accepten json
 app.use(express.json());

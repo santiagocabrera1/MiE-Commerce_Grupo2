@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+main {
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    width: 90%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    margin: 50px auto;
+}
+section >a:first-child{
+    text-decoration: none;
+    color: #000;
+}
+section .products{
+    width: 100%;
+}
+section :nth-child(5),section :nth-child(4){
+    align-self: flex-end;
+}
+
+
+/* formato de articulo de carrito */
+main section .products article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px #858585;
+    padding: 8px 15px;
+}
+
+.products article div{
+    display: flex;
+    align-items: center;
+
+}
+
+
+/* imagen del carrito */
+main section article img{
+    max-width: 130px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+/* Caracteristicas del producto */
+main section .products article div:last-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    max-width: 220px;
+}
+/* Input cantidad del producto */
+.products article input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.products article input{
+    width: 70px;
+    padding: 8px 15px;
+    border: 1px solid #494F51;
+    border-radius: 18px;
+    text-align: center;
+}
+.cantidad-products{
+    width: 100%;
+    position: relative;
+}
+.cantidad-products p{
+    position: absolute;
+}
+.cantidad-products .mas{
+    top: -80%;
+    right: 10%;
+}
+.cantidad-products .menos{
+    top: -90%;
+    left: 13%;
+}
+
+/* Boton de quitar elemento */
+.button{
+    text-align: center;
+    width: 100px;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #494F51;
+}
+
+/* precio del producto */
+main section .products article div:last-child :last-child{
+    
+    font-weight: bold;
+}
+
+

@@ -3,7 +3,7 @@ const router = express.Router();
 
 
 router.get('/', (req,res)=>{
-    res.render("register");
+    res.render("./pages/register");
 });
 
 module.exports = router;
