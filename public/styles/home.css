@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* CARD SECTION */
+
+.card__section-flex{
+    display: flex;
+}
+
+.card__section-div{
+    display: flex;
+}
+
+.card__section{
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
+    border-radius: 16px;
+    background-color: red;
+    height: 328px;
+    left: 128px;
+    top: 696px;
+    display: flex;
+    align-items: flex-end;
+    margin: 5px;
+}
+
+.card__section img{
+    border-radius: 8px;
+}
+
+.card__section h3{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    height: 64px;
+    width: 140px;
+    left: 8px;
+    top: 256px;
+    padding-left: 4.5px;
+}
+
+.card__section div{
+    height: 64px;
+    left: 8px;
+    right: 96px;
+    top: 256px;
+} 
+
+.card__section p{
+    width: 72px;
+    height: 24px;
+    right: 8px;
+    top: 256px;
+}
+
+.card__section-puntos{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 8px;
+    line-height: 11px;
+}

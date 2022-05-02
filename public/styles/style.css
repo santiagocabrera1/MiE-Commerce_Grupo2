@@ -1,12 +1,14 @@
 :root{
+
     --principal-white: rgb(255,255,255);
     --principal-lightGrey: rgb(153,153,153);
     --principal-mediumGrey: rgb(245,245,245);
-    --transparent-white: rgb(255,255,255);
+    --transparent-white: rgba(255,255,255,0.45);
     --principal-darkGrey: rgb(73,79,81);
     --principal-green: rgb(12,176,147);
     --principal-black: rgb(0,0,0);
     --principal-red: rgb(255,0,0);
+
 }
 
 *{
@@ -28,8 +30,6 @@ main{
 
 }
 
-
-
 .account{
     display: flex;
     justify-content: center;
@@ -37,6 +37,7 @@ main{
     margin: 15px 0px;
 }
 
+<<<<<<< HEAD
 
 
 .card {
@@ -46,3 +47,5 @@ main{
     box-shadow: 0 1px 3px rgba( 0, 0, 0, 0.5);
 }
 
+=======
+>>>>>>> ffd9c787e9369f53a5a67737ede9994b56f573b1
