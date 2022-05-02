@@ -27,7 +27,7 @@ app.use(require("./routers/home"));
 app.use("/products",require("./routers/product"));
 app.use("/cart",require("./routers/cart"));
 app.use("/checkout",require("./routers/checkout"));
-app.use("/register",require("./routers/register"));
+app.use("/register", require("./routers/register"));
 app.use("/login",require("./routers/login"));
 
 

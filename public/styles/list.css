@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+
+.sectionMain{
+    height: 200px;
+}
+
+.sectionMain ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #333333;
+    color: white;
+    max-width: 1000px;
+    margin: 50px auto;
+    border-radius: 16px;
+    padding: 35px 25px;
+}
+
+.sectionMain ul li {
+    text-align: center;
+    list-style: none;
+    border-right: 1px solid white;
+    padding: 10px 15px;
+    color: white;
+    font-weight: 400;
+}
+
+.sectionMain ul li:last-child{
+    border: none;
+}
+
+.sectionMain ul li i{
+    width: 100%;
+    text-align: center;
+}
