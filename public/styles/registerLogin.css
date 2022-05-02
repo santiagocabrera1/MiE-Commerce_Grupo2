@@ -6,24 +6,22 @@
 }
 
 .headerContainer{
-    background-color: gba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.25);
     padding: 16px 16px;
     backdrop-filter: blur(4px)
 }
 
 main{
     background: linear-gradient(to bottom, #0CB093, #0CB093 50%, #eee 5%, #ffffff 75%);
-    padding-top: 20px;
-
+    padding-top: 50px;
 }
-
 
 
 .account{
     display: flex;
     justify-content: center;
-    padding: 15px 10px;
-    margin: 15px 0px;
+    padding: 10px 10px;
+    margin: 5px 0px;
 }
 
 .footerContainer{
@@ -40,6 +38,7 @@ main{
 
 .box1 ul li{
     list-style: none;
+    color: #999999;
 }
 
 .box2{
@@ -54,5 +53,6 @@ main{
 
 .box3 ul li{
     list-style: none;
-    color: #999999;font-size: 12px;
+    color: #999999;
+    font-size: 12px;
 }
