@@ -1,0 +1,32 @@
+
+<header class="header-principal">
+    <div class="header-container">
+        <a href="#" class="link-logo">
+            <img src="images/MiEcommerce.png" alt="logo MiEcommerce">
+        </a>
+        
+        
+        <form action="search" class="busqueda-header">
+            <input type="search" placeholder="Buscar productos...">
+            <button type="submit">
+            <%- include('../../public/images/magnify.svg') %>
+            </button>
+        </form>
+        
+        
+        <div class="links-header">
+            <div class="link-carrito">
+                <a href="#">
+                    <%- include('../../public/images/cart-plus.svg') %>
+                </a>
+                <span class="carrito-notificacion"></span>
+            </div>
+            
+            <a class="link-perfil" href="#">
+                <img src="images/olivia.png" alt="Imagen de perfil del usuario">
+                <span>Olivia</span> 
+            </a>  
+        </div>
+    </div>
+</header>
+
