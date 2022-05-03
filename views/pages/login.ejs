@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/registerLogin.css">
+    <link rel="stylesheet" href="/styles/form.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <script src="https://kit.fontawesome.com/dc8f5ba48f.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+<body>
+
+    <header>
+        <div class="headerContainer">
+            <img src="images/MiEcommerce.png" alt="logo MiEcommerce">
+        </div>
+    </header>
+
+    <main class="registerLoginMain">
+
+        <section class="registerForm">
+
+            <h2>¡Hola!</h2>
+                <form action="/register" method="post">
+                    <input class="inPut" type="name" name="name" placeholder="Tu nombre de usuario">
+                    <input  class="inPut" type="password" name="key" placeholder="Tu contraseña">
+                <button class="buttomSubmit" type="submit">Crear cuenta</button>
+            </form>
+            
+        </section>
+
+        <div class="account">
+            <p>¿No tienes cuenta?</p><a href="#">Registrate</a>
+        </div>
+        
+    </main>
+
+    <%- include('../partials/footer') %>
+
+   
+    
+    
+
+
+    
+
+
+
+
+    
+</body>
+</html>

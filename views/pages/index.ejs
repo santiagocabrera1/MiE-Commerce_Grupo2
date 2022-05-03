@@ -1,52 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/styles/card.css">
-    <title>Document</title>
-</head>
-<body>
+<%- include('../partials/head') %>
 
+    <body>
+        <%- include('../partials/header') %>
+            <main>
+                <%- include('../partials/list') %>
+                <section class="content-products">
+                    <h2>Te puede interesar</h2>
+                    <%- include('../partials/card') %>
+                    <%- include('../partials/card') %>
+                    <%- include('../partials/card') %>
+                    <%- include('../partials/card') %>
+                </section>
+                <section class="content-products">
+                    
+                    <h2>Los mas pedidos</h2>
+                    <%- include('../partials/card') %>
+                    <%- include('../partials/card') %>
+                    <%- include('../partials/card') %>
+                    <%- include('../partials/card') %>
+                </section>
+                
+                <%- include('../partials/list') %>
+            </main>
+            <%- include('../partials/footer') %>
+    </body>
 
-    <main>
-        <section class="main__section">
-            <ul>
-                <li>Electrónica <i class="fa-solid fa-laptop-mobile"></i> </li>
-                <li>Alimentos <i class="fa-solid fa-burger-cheese"></i> </li>
-                <li>Bebidas <i class="fa-solid fa-beer-mug"></i> </li>
-                <li>Indumentaria <i class="fa-solid fa-shirt"></i> </li>
-                <li>Juegos <i class="fa-solid fa-gamepad"></i> </li>
-                <li>Automotor <i class="fa-solid fa-steering-wheel"></i> </li>
-                <li>Hogar <i class="fa-solid fa-couch"></i> </li>
-                <li>Otros <i class="fa-solid fa-gift"></i> </li>
-            </ul>
-        </section>
-    </main>
-
-    <section>
-        <h2>Te puede interesar</h2>
-            <div class="card__section-flex">
-    
-    
-            </div>
-    
-        </article>
-    
-    </section>
-
-    <section>
-        <h2>Los más pedidos</h2>
-            <div class="card__section-flex">
-    
-    
-            </div>
-    
-        </article>
-    
-    </section>
-
-</body>
 </html>

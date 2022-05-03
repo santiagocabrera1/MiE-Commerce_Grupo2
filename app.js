@@ -24,7 +24,7 @@ app.use(express.urlencoded({extended:false}));
 
 // rutas de la pagina
 app.use(require("./routers/home"));
-app.use("/products",require("./routers/product"));
+app.use("/products",require("./routers/products"));
 app.use("/cart",require("./routers/cart"));
 app.use("/checkout",require("./routers/checkout"));
 app.use("/register", require("./routers/register"));
