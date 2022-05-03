@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('../partials/head') %> 
+<%- include('../partials/head') %>
+
 <body>
-    <%- include('../partials/header') %> 
-    <main>
+        <header>
+            <div class="headerContainer">
+                <img src="images/MiEcommerce.png" alt="logo MiEcommerce">
+            </div>
+        </header>
 
-        <section class="registerForm">
+            <main class="registerLoginMain">
 
-            <h2>¡Registrate!</h2>
-                <form action="/register" method="post">
-                    <input type="email" name="email" placeholder="Tu email">
-                    <input type="password" name="key" placeholder="Tu nueva contraseña">
-                    <input type="password" name="key" placeholder="Repite tu contraseña">
-                <button type="submit">Crear cuenta</button>
-            </form>
-            
-        </section>
+                <section class="registerForm">
 
-        <div class="account">
-            <p>¿Ya tienes cuenta? </p> <a href="#">Inicia Sesion</a>
-        </div>
-        
-    </main>
-    
-    <%- include('../partials/footer') %> 
+                    
+                    <article>
 
-</body>
+                        <h2>¡Registrate!</h2>
+                        <form action="/register" method="post">
+                            <input class="inPut" type="email" name="email" placeholder="Tu email">
+                            <input class="inPut" type="password" name="key" placeholder="Tu nueva contraseña">
+                            <input class="Input" type="password" name="key" placeholder="Repite tu contraseña">
+                            <button class="buttomSubmit" type="submit">Crear cuenta</button>
+                        </form>
+                        
+                    </article>
+                    <div class="account">
+                        <p>¿Ya tienes cuenta?  <a href="#">Inicia Sesion</a></p>
+                    </div>
+                </section>
+
+
+            </main>
+
+            <%- include('../partials/footer') %>
+
+    </body>
+
 </html>
