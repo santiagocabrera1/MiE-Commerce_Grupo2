@@ -11,7 +11,7 @@ main {
 
 main section{
     width: 90%;
-    max-width: 1000px;
+    max-width: 1200px;
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
