@@ -9,21 +9,21 @@ main {
     align-items: center;
 }
 
-section{
+main section{
     width: 90%;
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
-    margin: 50px auto;
+    height: 90%;
 }
-section >a:first-child{
+main section >a:first-child{
     text-decoration: none;
     color: #000;
 }
-section .products{
+main section .products{
     width: 100%;
 }
-section :nth-child(5),section :nth-child(4){
+main section :nth-child(5),section :nth-child(4){
     align-self: flex-end;
 }
 
