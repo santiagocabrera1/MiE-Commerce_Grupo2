@@ -30,6 +30,10 @@
 .registerForm{
     filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
 }
+.registerForm form button[type="submit"]{
+    color: #ffffff;
+    font-weight: bold;
+}
 .account{
     display: flex;
     justify-content: center;
