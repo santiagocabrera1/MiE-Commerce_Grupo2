@@ -1,5 +1,4 @@
 :root{
-
     --principal-white: rgb(255,255,255);
     --principal-lightGrey: rgb(153,153,153);
     --principal-mediumGrey: rgb(245,245,245);
@@ -8,7 +7,6 @@
     --principal-green: rgb(12,176,147);
     --principal-black: rgb(0,0,0);
     --principal-red: rgb(255,0,0);
-
 }
 
 *{
@@ -36,16 +34,3 @@ main{
     padding: 15px 10px;
     margin: 15px 0px;
 }
-
-<<<<<<< HEAD
-
-
-.card {
-    padding: 6px;
-    border-radius: 14px;
-    background-color: #fff;
-    box-shadow: 0 1px 3px rgba( 0, 0, 0, 0.5);
-}
-
-=======
->>>>>>> ffd9c787e9369f53a5a67737ede9994b56f573b1
