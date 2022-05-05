@@ -1,20 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="stylesheet" href="/styles/brands.css">
 <%- include('../partials/head') %>
 
     <body>
         <%- include('../partials/header') %>
-            <main>
-                <%- include('../partials/list') %>
+        <main>
+            <%- include('../partials/list') %>
+
+            <section class="brands__cuadros">
+
+                <article class="disney__cuadro">
+                    <div class="cuadro-contenedor">
+                        <img class="cuadro-logo" src="/images/disneybrand.png" alt="Logo de Disney Plus en combo con Star Plus">
+                        <div class="cuadro-logo-div">
+                            <p>50% OFF en Combo Plus</p>
+                            <p>Canjeando 50.000 puntos MiEcommerce.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="hbo__cuadro">
+                    <div class="cuadro-contenedor">
+                        <img class="cuadro-logo" src="/images/hbobrand.png" alt="Logo de HBO Max">
+                        <div class="cuadro-logo-div">
+                            <p>50% OFF en Combo Plus</p>
+                            <p>Canjeando 50.000 puntos MiEcommerce.</p>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+
+            <section class="content-products">
+                <h2>Te puede interesar</h2>
+                <%- include('../partials/card') %>
+                <%- include('../partials/card') %>
+                <%- include('../partials/card') %>
+                <%- include('../partials/card') %>
+            </section>
+            
                 <section class="content-products">
-                    <h2>Te puede interesar</h2>
-                    <%- include('../partials/card') %>
-                    <%- include('../partials/card') %>
-                    <%- include('../partials/card') %>
-                    <%- include('../partials/card') %>
-                </section>
-                <section class="content-products">
-                    
                     <h2>Los mas pedidos</h2>
                     <%- include('../partials/card') %>
                     <%- include('../partials/card') %>
