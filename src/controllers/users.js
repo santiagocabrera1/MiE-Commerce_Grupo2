@@ -1,4 +1,7 @@
 const {validationResult} = require("express-validator")
+const fs = require("fs");
+const path = require("path");
+const bcrypt = require("bcryptjs")
 
 module.exports = {
     indexRegister: (req,res)=>{
@@ -14,6 +17,13 @@ module.exports = {
         if(!errors.isEmpty()){
             res.render("./pages/register", {errors : errors.mapped(), oldData: req.body});
         } else {
+            let users = JSON.parse(fs.readFileSync(path.join(__dirname ,"../data/users.json"), {encoding: "utf-8"}));
+            users.push({
+                ...req.body,
+                password: bcrypt.hashSync(req.body.password, 10)
+            });
+            fs.writeFileSync(path.join(__dirname ,"../data/users.json"), JSON.stringify(users));
+            res.redirect("/login");
 
         }
 
