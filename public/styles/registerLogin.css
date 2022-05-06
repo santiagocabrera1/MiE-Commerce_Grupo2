@@ -26,7 +26,7 @@
     background: linear-gradient(to bottom, #0CB093, #0CB093 50%, #eee 5%, #ffffff 75%);
     padding-top: 20px;
     min-height: 82.5vh;
-    width: 90%;
+    /* width: 90%; */
 }
 .registerForm{
     filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
@@ -41,9 +41,4 @@
     padding: 10px 10px;
     margin: 5px 0px;
     width: 100%;
-}
-
-@media (max-width:768px){
-
-
 }
