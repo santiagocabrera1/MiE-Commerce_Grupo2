@@ -2,7 +2,7 @@ const {validationResult} = require("express-validator")
 
 module.exports = {
     indexRegister: (req,res)=>{
-        res.render("./pages/register");
+        res.render("./pages/register", {errors: {}, oldData: {}});
     },
 
     indexLogin : (req,res)=>{
@@ -10,8 +10,14 @@ module.exports = {
     },
 
     register:(req,res) =>{
-        res.send(req.body);
-        console.log(validationResult(req))
+        const errors = validationResult(req);
+        if(!errors.isEmpty()){
+            res.render("./pages/register", {errors : errors.mapped(), oldData: req.body});
+        } else {
+
+        }
+
+
     }
 
     
