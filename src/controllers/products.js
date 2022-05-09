@@ -17,7 +17,7 @@ module.exports = {
         if (product) {
             res.render("./pages/product-detail", {product, relacionados})
         } else {        
-            res.render("./pages/notfound");
+            res.redirect("/not-found");
         }
         
     }
