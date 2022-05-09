@@ -38,4 +38,6 @@ app.use((req, res, next) => {
 })
 
 
+app.use("/api", require("./src/routers/api"))
+
 
