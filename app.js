@@ -30,4 +30,6 @@ app.use("/checkout",require("./src/routers/checkout"));
 app.use("/register", require("./src/routers/register"));
 app.use("/login",require("./src/routers/login"));
 
+app.use("/api", require("./src/routers/api"))
+
 
