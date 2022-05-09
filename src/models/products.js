@@ -7,7 +7,7 @@ module.exports = {
     },
     findOne: function (id) {
         const products = this.findAll();
-        const product = products.find(product => Number(product.id) === id);
+        const product = products.find(product => Number( product.id ) === Number(id) );
         return product;
     },
     findCategory: function (category) {
