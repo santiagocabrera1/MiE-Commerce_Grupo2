@@ -14,5 +14,4 @@ module.exports = {
         console.log(validationResult(req))
     }
 
-    
 }

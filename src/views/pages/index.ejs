@@ -37,18 +37,16 @@
 
             <section class="content-products">
                 <h2>Te puede interesar</h2>
-                <%- include('../partials/card') %>
-                <%- include('../partials/card') %>
-                <%- include('../partials/card') %>
-                <%- include('../partials/card') %>
+                <% destacados.forEach((product) => { %> 
+                    <%- include('../partials/card', product) %>            
+                <% }) %> 
             </section>
             
                 <section class="content-products">
                     <h2>Los mas pedidos</h2>
-                    <%- include('../partials/card') %>
-                    <%- include('../partials/card') %>
-                    <%- include('../partials/card') %>
-                    <%- include('../partials/card') %>
+                    <% mostwanted.forEach((product) => { %> 
+                        <%- include('../partials/card', product) %>            
+                    <% }) %> 
                 </section>
                 
                 <%- include('../partials/list') %>

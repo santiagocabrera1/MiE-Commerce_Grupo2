@@ -22,8 +22,10 @@
     margin: 5px;
 }
 
-.card__section img{
+.card__section img {
     border-radius: 8px;
+    max-width: 100%;
+    max-height: 50%;
 }
 
 .card__section h3{
