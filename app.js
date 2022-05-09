@@ -16,18 +16,20 @@ app.use(express.static("public"));
 
 // set view engine
 app.set("view engine", "ejs");
-app.set("views", "./views");
+app.set("views", "./src/views");
 
 // para que los formularios accepten json
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 
 // rutas de la pagina
-app.use(require("./routers/home"));
-app.use("/products",require("./routers/products"));
-app.use("/cart",require("./routers/cart"));
-app.use("/checkout",require("./routers/checkout"));
-app.use("/register", require("./routers/register"));
-app.use("/login",require("./routers/login"));
+app.use(require("./src/routers/home"));
+app.use("/products",require("./src/routers/products"));
+app.use("/cart",require("./src/routers/cart"));
+app.use("/checkout",require("./src/routers/checkout"));
+app.use("/register", require("./src/routers/register"));
+app.use("/login",require("./src/routers/login"));
+
+app.use("/api", require("./src/routers/api"))
 
 

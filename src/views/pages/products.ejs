@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <%- include('../partials/head') %>
-
 <body>
     <%- include('../partials/header') %>
     <div class="container-products">
@@ -25,10 +24,9 @@
             </div>
             </article>
             <article class="products-card">
-                <%- include('../partials/card') %>
-                <%- include('../partials/card') %>
-                <%- include('../partials/card') %>
-                <%- include('../partials/card') %>
+                <% products.data.forEach((product) => { %> 
+                    <%- include('../partials/card', product) %>            
+                <% }) %> 
             </article>
         </section>
 
