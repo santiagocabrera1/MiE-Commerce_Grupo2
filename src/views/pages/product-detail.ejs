@@ -14,10 +14,8 @@
                 <span class="bold"> <%= product.price %> </span> 
                 <span>PUNTOS</span>
 
-
-
                 <form action="/cart/addProduct" method="post">
-                    <input name="product" type="hidden" value="<%= products.data %> ">
+                    <input name="product" type="hidden" value="<%= product %> "> 
                     <button type="submit" class="agrega-carrito">Agregar al Carrito</button>
                 </form>
 
