@@ -1,6 +1,7 @@
 .modalError{
     display: flex;
     flex-wrap: wrap;
+    position: relative;
     margin: auto;
     text-align: center;
     width: 400px;
@@ -33,11 +34,26 @@
 .primaryButton{
     border-radius:1rem;
     padding: 10px 10px;
+    background-color: #494F51;
+    color: white;
 }
 
 .secondaryButton{
     border-radius: 1rem;
     padding: 10px 10px;
+    background-color: #0CB093;
+    color: white;
+}
+
+.ventanaEmergente{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.53);
+    z-index: 2;
 }
 
 
