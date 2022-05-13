@@ -8,7 +8,8 @@
 .brands__cuadros{
     display: flex;
     padding-left: 8%;
-    padding-right: 8%
+    padding-right: 8%;
+    box-sizing: border-box;
 }
 
 .disney__cuadro{
@@ -77,6 +78,10 @@
     margin: 10px;
 }
 
+.cuadro-log__titulo{
+    font-weight: bold;
+}
+
 @media (max-width: 841px){
 
     *{
@@ -99,6 +104,7 @@
     .disney__cuadro{
         width: 100%;
         margin-bottom: 1%;
+        margin-right: 0%;
     }
 
     .hbo__cuadro{
@@ -106,10 +112,17 @@
     }
 }
 
-@media (max-width: 424px){
+@media (max-width: 415px){
     .cuadro-contenedor__logo-parrafo{
-        font-size: 1rem;
+        font-size: 1.3rem;
         padding-right: 1%;
+        padding-top: 20%;
+    }
+
+    .brands__cuadros{
+        padding-left: 3%;
+        padding-right: 3%;
+        height: 194px;
     }
 
 }
