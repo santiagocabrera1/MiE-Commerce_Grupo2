@@ -82,10 +82,7 @@
 
 @media (min-width: 1024px){
 
-    .card__section-flex{
-        display: flex;
-    }
-    
+
     .card__section{
     
         filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
@@ -95,18 +92,25 @@
         max-width: 250px;
         display: flex;
         justify-content: center;
-        align-items: flex-end;
         flex-wrap: wrap;
         margin: 5px;
     }
-    .card__section-div{
-        display: flex;
-    }
-    
+
     .card__image {
         border-radius: 8px;
-        max-width: 100%;
-        max-height: 100%;
+        width: 380px;
+        height: 380px;
+
+    }
+    .card__image img{
+        height: 100%;
+
+    }
+    .card__section-div{
+        display: flex;
+        box-sizing: border-box;
+        overflow-y: hidden;
+        overflow-x: hidden;
     }
     
     .card__section h3{
@@ -121,13 +125,13 @@
         text-decoration: none;
         color: var(--principal-black);
     }
-    
-    .card__section-div{
-        box-sizing: border-box;
-        overflow-y: hidden;
-        overflow-x: hidden;
-    } 
-    
+
+    .card__section p{
+        width: 72px;
+        height: 24px;
+        right: 8px;
+        top: 256px;
+    }
     
     .card__section-puntos{
         font-style: normal;
@@ -136,12 +140,7 @@
         line-height: 11px;
     }
 
-    .card__section p{
-        width: 72px;
-        height: 24px;
-        right: 8px;
-        top: 256px;
-    }
+
     
     .card__section-puntos{
         font-family: 'Open Sans';
