@@ -29,7 +29,7 @@ h2{
     filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
     border-radius: 16px;
     background-color: red;
-    height: 328px;
+    /*height: 328px;*/
     left: 128px;
     top: 696px;
     display: flex;
@@ -54,12 +54,15 @@ h2{
     padding-left: 4.5px;
 }
 
+/*
 .card__section div{
     height: 64px;
     left: 8px;
     right: 96px;
     top: 256px;
 } 
+
+*/
 
 .card__section p{
     width: 72px;
