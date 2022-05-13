@@ -1,0 +1,19 @@
+.modalError{
+    width: 400px;
+    height: 150px;
+    background-color: white;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 16px;
+    padding: 16px;
+    margin-top: 16px;
+    display: none;
+}
+
+.modalTitle{
+    font-weight: 700;
+}
+
+
+
+
