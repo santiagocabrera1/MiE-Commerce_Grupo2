@@ -7,7 +7,6 @@ const email = form.querySelector("input[name=email]");
 const password = form.querySelector("input[name=password]");
 
 
-console.log(password);
     
 
 })
