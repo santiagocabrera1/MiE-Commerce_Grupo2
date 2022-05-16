@@ -111,18 +111,3 @@
         width: 100%;
     }
 }
-
-@media (max-width: 415px){
-    .cuadro-contenedor__logo-parrafo{
-        font-size: 1.3rem;
-        padding-right: 1%;
-        padding-top: 20%;
-    }
-
-    .brands__cuadros{
-        padding-left: 3%;
-        padding-right: 3%;
-        height: 194px;
-    }
-
-}

@@ -42,7 +42,7 @@
 
 
 
-/* fomulario de busqueda */
+/* formulario de busqueda */
 .busqueda-header {
     position: relative;
     width: 60%;
@@ -187,7 +187,6 @@
         border-radius: 50%;
     }
     
-
     .link-perfil {
         gap: 6px;
         width: min-content;
