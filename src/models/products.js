@@ -1,22 +1,43 @@
 const fs = require("fs");
 const path = require("path");
+const fetch = require("node-fetch");
+const URLbase = "https://fakestoreapi.com";
+
 module.exports = {
-    findAll: () => {
-        const products = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/products.json"), { encoding: "utf-8" }));
+    findAll: async() => {
+        const response = await fetch(`${URLbase}/products`);
+        const products = await response.json();
         return products;
+        
     },
-    findOne: function (id) {
-        const products = this.findAll();
-        const product = products.find(product => Number( product.id ) === Number(id) );
-        return product;
+    findOne: async (id) => {
+        try {
+            const response = await fetch(`${URLbase}/products/${id}`);
+            const product = await response.json();
+            return product;
+        } catch (error) {
+            console.log(error);
+        }
     },
-    findCategory: function (category) {
-        const products = this.findAll().filter(product => product.category.toLowerCase() == category.toLowerCase());
-        return products;
+    findCategory: async (category) => {
+        try {
+            const response = await fetch(`${URLbase}/products`);
+            const products = await response.json();
+            const filtro = products.filter(product => product.category.toLowerCase() == category.toLowerCase());
+            return filtro;
+        } catch (error) {
+            console.log(error);
+        }
     },
-    findMostwanted: function (){
-        const products = this.findAll().filter(product => product.mostwanted);
-        return products;
+    findMostwanted: async ()=>{
+        try {
+            const response = await fetch(`${URLbase}/products`);
+            const products = await response.json();
+            const mostwanted = products.filter(product =>product.rating.count > 300);
+            return mostwanted;
+        } catch (error) {
+            console.log(error);
+        }
     }
 
 }

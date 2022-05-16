@@ -1,12 +1,12 @@
-const products = require("../data/products.json");
+
 const model = require("../models/products");
 
 module.exports = {
-    index: (req,res)=>{
-        const mostwanted = products.filter((product) => product.mostwanted === true)
+    index: async (req,res)=>{
+        const products = await model.findAll()
         const destacados = products.slice(0, 4)
-        
-        res.render("./pages/index", { destacados, mostwanted: model.findAll()});
+        const mostwanted = await model.findMostwanted()
+        res.render("./pages/index", { destacados, mostwanted: mostwanted.slice(0, 8)});
     }
     
 }
