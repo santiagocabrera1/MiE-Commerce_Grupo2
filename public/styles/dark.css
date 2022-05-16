@@ -1,0 +1,12 @@
+.dark header{
+    background-color: #222222;
+}
+
+.dark  button[type = "submit"]{
+    background-color: black;
+}
+
+.dark .headerContainer{
+    background-color: black;
+}
+/* comienza el nav */
