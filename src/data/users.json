@@ -33,5 +33,19 @@
         "lastname": "Pepito",
         "email": "pepe@pepito.com",
         "password": "$2a$10$7Yn7b42xMQzNkxUCsMcwO.8/lGzpaa7F4nzDROazZJ8TemEfcQfpG"
+    },
+    {
+        "id": 1,
+        "firstname": "flor",
+        "lastname": "encia",
+        "email": "flor@encia.com",
+        "password": "$2a$10$F84z2N5uS88vfXmf3otFTeGEGr9EbZBTBP0z3uHnBafokwv7DSEgW"
+    },
+    {
+        "id": 1,
+        "firstname": "Noe",
+        "lastname": "Mai",
+        "email": "noe@mai.com",
+        "password": "$2a$10$bUYVtmDdCzb9cqQVIc3VDOXvXI.kn0PHEpt1bg8FpHHDGPvk8Q7wO"
     }
 ]

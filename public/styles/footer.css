@@ -1,22 +1,4 @@
 
-:root{
-    --principal-white: rgba(255,255,255,1);
-    --principal-lightGrey: rgba(153,153,153,1);
-    --principal-mediumGrey: rgba(245,245,245,1);
-    --principal-darkGrey: rgba(73,79,81,1);
-    --principal-green: rgba(12,176,147,1);
-    --principal-black: rgba(0,0,0,1);
-    --principal-red: rgba(255,0,0,1);
-}
-
-* {
-    padding:0px;
-    margin: 0px;
-    box-sizing:border-box;
-    font-family: 'Open Sans', sans-serif;
-    
-}
-
 .footer-principal {
     display: flex;
     justify-content: center;
@@ -81,10 +63,10 @@
     font-size: small;
 }
 
-
-.footer-app svg {
-    fill: var(--principal-lightGrey);
+.footer-container i {
+    color: var(--principal-lightGrey);
 }
+
 @media (min-width:796px) {
     .footer-app{
         order: 2;

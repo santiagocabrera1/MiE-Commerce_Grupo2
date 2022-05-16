@@ -2,59 +2,67 @@
 <html lang="en">
 <%- include('../partials/head') %>
 
-<body>
+    <body class="dark">
         <header>
             <div class="headerContainer">
-                <a href="/">
-                    <img src="images/MiEcommerce.png" alt="logo MiEcommerce">
+                <a href="/" class="text-logo">
+                    <p>Mi<span>Ecommerce</span></p>
                 </a>
             </div>
         </header>
-            <main class="registerLoginMain">
-                <section class="registerForm">
-                    <article>
-                        <h2>¡Registrate!</h2>
-                        <form action="/register" method="post">
-                            <fieldset class = <%= errors.firstname && "error" %> >
-                                <input  type="text" name="firstname" placeholder="Nombre"
-                                    value = <%= oldData.firstname && oldData.firstname %>
-                                >
-                                <i class="fas fa-exclamation-circle"></i>
-                                <small><%= errors.firstname && errors.firstname.msg %></small>
-                            </fieldset>
-                            <fieldset class = <%= errors.lastname && "error" %> >
-                                <input  type="text" name="lastname" placeholder="Apellido"
-                                    value = <%= oldData.lastname && oldData.lastname %>
-                                >
-                                <i class="fas fa-exclamation-circle"></i>
-                                <small><%= errors.lastname && errors.lastname.msg %></small>
-                            </fieldset>
-                            <fieldset class = <%= errors.email && "error" %> >
-                                <input  type="email" name="email" placeholder="Email"
-                                    value = <%= oldData.email && oldData.email %>
-                                >
-                                <i class="fas fa-exclamation-circle"></i>
-                                <small><%= errors.email && errors.email.msg %></small>
-                            </fieldset>
-                            <fieldset class = <%= errors.password && "error" %> >
-                                <input  type="password" name="password" placeholder="Contraseña">  
-                                <i class="fas fa-exclamation-circle"></i>
-                                <small><%= errors.password && errors.password.msg %></small>
-                            </fieldset>
-                            <button class="buttomSubmit" type="submit">Crear cuenta</button>
-                        </form>
-                        
-                    </article>
-                </section>
-                <div class="account">
-                    <p>¿Ya tienes cuenta?  <a href="/login">Inicia Sesion</a></p>
-                </div>
+        <main class="registerLoginMain">
+            <section class="registerForm">
+                <article>
+                    <h2>¡Registrate!</h2>
+                    <form action="/register" method="post">
+                        <fieldset class=<%=errors.firstname && "error" %> >
+                            <input type="text" name="firstname" placeholder="Nombre" value=<%=oldData.firstname &&
+                                oldData.firstname %>
+                            >
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>
+                                <%= errors.firstname && errors.firstname.msg %>
+                            </small>
+                        </fieldset>
+                        <fieldset class=<%=errors.lastname && "error" %> >
+                            <input type="text" name="lastname" placeholder="Apellido" value=<%=oldData.lastname &&
+                                oldData.lastname %>
+                            >
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>
+                                <%= errors.lastname && errors.lastname.msg %>
+                            </small>
+                        </fieldset>
+                        <fieldset class=<%=errors.email && "error" %> >
+                            <input type="email" name="email" placeholder="Email" value=<%=oldData.email && oldData.email
+                                %>
+                            >
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>
+                                <%= errors.email && errors.email.msg %>
+                            </small>
+                        </fieldset>
+                        <fieldset class=<%=errors.password && "error" %> >
+                            <input type="password" name="password" placeholder="Contraseña">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>
+                                <%= errors.password && errors.password.msg %>
+                            </small>
+                        </fieldset>
+                        <button class="btn" type="submit">Crear cuenta</button>
+                    </form>
+
+                </article>
+            </section>
+            <article class="account">
+                <p>¿Ya tienes cuenta? <a href="/login"> Inicia Sesion</a></p>
+            </article>
 
 
-            </main>
+        </main>
 
-            <%- include('../partials/footer') %>
-
+        <%- include('../partials/footer') %>
+        <script src="/javascript/validRegister.js"></script>
     </body>
 
 </html>
