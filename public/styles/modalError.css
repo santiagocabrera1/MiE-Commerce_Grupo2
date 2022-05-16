@@ -1,0 +1,61 @@
+.modalError{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 400px;
+    height: 150px;
+    background-color: white;
+    border-radius: 1rem;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    /*display: none;*/
+    
+}
+
+.modalTitle{
+    font-weight: 700;
+}
+
+.modalText{
+    display: flex;
+    font-weight: 400;
+    font-size: 1rem;
+    width: 100%;
+}
+.modalButons{
+    gap: 1rem;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.primaryButton{
+    border-radius:1rem;
+    padding: 10px 10px;
+    background-color: #494F51;
+    color: white;
+}
+
+.secondaryButton{
+    border-radius: 1rem;
+    padding: 10px 10px;
+    background-color: #0CB093;
+    color: white;
+}
+
+.ventanaEmergente{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.53);
+    z-index: 2;
+}
+
+
+
+
