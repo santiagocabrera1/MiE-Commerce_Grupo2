@@ -1,0 +1,115 @@
+/* CARDS DE BRANDS EN EL HOME */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.brands__cuadros{
+    display: flex;
+    padding-left: 8%;
+    padding-right: 8%
+}
+
+.disney__cuadro{
+    background-image: url(/images/pages/banner/disneybg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    margin-right: 1%;
+    color: var(--principal-white);
+    border-radius: 16px;
+    width: 50%;
+    height: 50vh;
+}
+
+.disney__cuadro-bg{
+    border-radius: 16px;
+    position: absolute;
+    width: 50%;
+}
+
+.hbo__cuadro{
+    background-image: url(/images/pages/banner/hbobg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    color: var(--principal-white);
+    border-radius: 16px;
+    width: 50%;
+    height: 50vh;
+}
+
+.hbo__cuadro-bg{
+    border-radius: 16px;
+    position: absolute;
+    width: 50%;
+}
+
+.cuadro-contenedor__logo-parrafo{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    box-sizing: border-box;
+    max-width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    border-radius: 0px 0px 16px 16px;
+    position: relative;
+    font-size: 2rem;
+    width: 100%;
+}
+
+.cuadro-logo-div{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-bottom: 10px;
+}
+
+.cuadro-logo{
+    height: 112px;
+    width: 112px;
+    left: 8px;
+    top: 136px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+@media (max-width: 841px){
+
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    .cuadro-contenedor__logo-parrafo{
+        font-size: 1.5rem;
+        padding-right: 1%;
+    }
+
+    .brands__cuadros{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .disney__cuadro{
+        width: 100%;
+        margin-bottom: 1%;
+    }
+
+    .hbo__cuadro{
+        width: 100%;
+    }
+}
+
+@media (max-width: 424px){
+    .cuadro-contenedor__logo-parrafo{
+        font-size: 1rem;
+        padding-right: 1%;
+    }
+
+}

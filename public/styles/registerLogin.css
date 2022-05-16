@@ -1,21 +1,5 @@
-:root{
-    --principal-white: rgb(255,255,255);
-    --principal-lightGrey: rgb(153,153,153);
-    --principal-mediumGrey: rgb(245,245,245);
-    --transparent-white: rgba(255,255,255,0.45);
-    --principal-darkGrey: rgb(73,79,81);
-    --principal-green: rgb(12,176,147);
-    --principal-black: rgb(0,0,0);
-    --principal-red: rgb(255,0,0);
-}
 
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-}
-
+/* nav para register y login */
 .headerContainer{
     background-color: rgba(255, 255, 255, 0.25);
     padding: 16px 16px;
@@ -26,14 +10,6 @@
     background: linear-gradient(to bottom, #0CB093, #0CB093 50%, #eee 5%, #ffffff 75%);
     padding-top: 20px;
     min-height: 82.5vh;
-    /* width: 90%; */
-}
-.registerForm{
-    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
-}
-.registerForm form button[type="submit"]{
-    color: #ffffff;
-    font-weight: bold;
 }
 .account{
     display: flex;
