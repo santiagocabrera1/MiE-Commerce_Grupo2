@@ -12,7 +12,7 @@
 }
 
 .disney__cuadro{
-    background-image: url(/images/disneybg.jpg);
+    background-image: url(/images/pages/banner/disneybg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -31,7 +31,7 @@
 }
 
 .hbo__cuadro{
-    background-image: url(/images/hbobg.jpg);
+    background-image: url(/images/pages/banner/hbobg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;

@@ -4,7 +4,7 @@
 
     <body>
         <%- include('../partials/header') %>
-            <main class="container-products">
+            <main class="product-detail">
                 <section class="detalle-producto">
                     <article class="producto">
                         <h4><%= product.title %></h4>
@@ -12,8 +12,8 @@
                             <img class="producto-imagen" src="<%= product.image %>" alt="<%= product.title  %>">
                             <ul>
                                 <li><img src="<%= product.image %>" alt="<%= product.title  %>"></li>
-                                <li><img src="/images/default-product.png" alt="default-product"></li>
-                                <li><img src="/images/default-product.png" alt="default-product"></li>
+                                <li><img src="/images/products/default-product.png" alt="default-product"></li>
+                                <li><img src="/images/products/default-product.png" alt="default-product"></li>
                             </ul>
                         </div>
                         <div class="producto-caracteristicas">
@@ -29,7 +29,7 @@
                     </article>
                 </section>
 
-                <section>
+                <section class="interes">
                     <h3>Tambien te puede interesar</h3>
                     
                     <article class="products-card">
@@ -37,7 +37,7 @@
                         
                         <% relacionados.forEach((product)=> { %>
                             <%- include('../partials/card', product) %>
-                            <% }) %>
+                        <% }) %>
                     </article>
                 </section>
 

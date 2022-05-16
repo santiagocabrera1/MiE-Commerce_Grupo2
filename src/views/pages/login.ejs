@@ -1,21 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/registerLogin.css">
-    <link rel="stylesheet" href="/styles/form.css">
-    <link rel="stylesheet" href="/styles/footer.css">
-    <script src="https://kit.fontawesome.com/dc8f5ba48f.js" crossorigin="anonymous"></script>
-    <title>Login</title>
-</head>
+    <%- include('../partials/head') %>
 <body>
 
     <header>
         <div class="headerContainer">
-            <a href="/">
-                <img src="images/MiEcommerce.png" alt="logo MiEcommerce">
+            <a href="/" class="text-logo">
+                <p>Mi<span>Ecommerce</span></p>
             </a>
         </div>
     </header>
@@ -28,16 +19,17 @@
                 <form action="/register" method="post">
                     <input class="inPut" type="name" name="name" placeholder="Tu nombre de usuario">
                     <input  class="inPut" type="password" name="key" placeholder="Tu contraseña">
-                <button class="buttomSubmit" type="submit">Crear cuenta</button>
+                <button class="btn" type="submit">Crear cuenta</button>
             </form>
             
         </section>
 
         <div class="account">
-            <p>¿No tienes cuenta?</p><a href="/register">Registrate</a>
+            <p>¿No tienes cuenta?  <a href="/register">Registrate</a></p>
         </div>
         
     </main>
+
 
     <%- include('../partials/footer') %>
 
