@@ -4,7 +4,8 @@
     position: relative;
     margin: auto;
     text-align: center;
-    width: 400px;
+    width: 90vw;
+    max-width: 400px;
     height: 150px;
     background-color: white;
     border-radius: 1rem;
