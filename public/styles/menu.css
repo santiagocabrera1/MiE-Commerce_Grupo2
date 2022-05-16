@@ -1,10 +1,6 @@
-*{
-    padding: 0px;
-    margin: 0px;
-}
-
 .side_menu{
-    position: absolute;
+    position: fixed;
+    z-index: 5;
 }
 
 .link-perfil {
