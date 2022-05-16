@@ -26,3 +26,14 @@
     width: 100%;
 
 }
+
+.ventanaEmergenteCheckout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.53);
+    z-index: 2;
+}
