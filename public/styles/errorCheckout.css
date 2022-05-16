@@ -1,0 +1,28 @@
+.errorCheckOut{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 400px;
+    height: 150px;
+    background-color: white;
+    border-radius: 1rem;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    /*display: none;*/
+}
+
+.errorCheckOutTitle{
+    font-weight: 700;
+
+}
+
+.errorCheckOutText{
+    display: flex;
+    font-weight: 400;
+    font-size: 1rem;
+    width: 100%;
+
+}
