@@ -31,6 +31,7 @@ app.use("/register", require("./src/routers/register"));
 app.use("/login",require("./src/routers/login"));
 app.use("/not-found",require("./src/routers/notfound"));
 
+
 // ruta pagenotfound//
 app.use((req, res, next) => {
     res.status(404).redirect('/not-found');

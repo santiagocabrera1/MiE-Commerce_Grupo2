@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head') %>
+<body>
+    <%- include('../partials/header') %>
+    <div class="container-products">
+        <section class="detalle-producto">
+            <article class="producto-img-txt">
+                <div class="producto-img-container">
+                    <img class="producto-imagen" src="<%= product.image %>" alt="<%= product.title  %>">
+                </div>
+            <div class="producto-caracteristicas">
+                <h3><%= product.title  %> </h3>
+                <span class="bold"> <%= product.price %> </span> 
+                <span>PUNTOS</span>
+
+                <form action="/cart/addProduct" method="post">
+                    <input name="product" type="hidden" value="<%= product %> "> 
+                    <button type="submit" class="agrega-carrito">Agregar al Carrito</button>
+                </form>
+
+                <p>
+                    <%= product.description %>
+                </p>
+            </div>
+            </article>
+            <h3>Tambien te puede interesar</h3>
+
+            <article class="products-card">
+                <% relacionados.forEach((product) => { %> 
+                    <%- include('../partials/card', product) %>            
+                <% }) %> 
+            </article>
+        </section>
+
+    </div>
+    <%- include('../partials/list') %>
+    <%- include('../partials/footer') %>
+</body>
+
+</html>
+
+
+
+
+
+

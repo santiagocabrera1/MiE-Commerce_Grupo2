@@ -5,7 +5,7 @@
     align-items: center;
     max-width: 500px;
     margin:  auto;
-    padding: 100px 30px;
+    padding: 80px 30px 30px 20px;
     border-radius: 16px;
     background: #FFFFFF;
 }
@@ -15,14 +15,17 @@
     width: 100%;
     font-weight: 400px;
     font-size: 32px;
+    margin-bottom: 10px;
 }
 
-
+.registerForm fieldset, .registerForm article{
+    width: 100%;
+}
 .registerForm input{
     width: 100%;
     border-radius: 16px;
     padding: 15px 10px;
-    margin: 10px 0px;
+    margin: 8px 0px;
     border: 1px solid black;
 }
 
@@ -33,3 +36,36 @@
     margin: 10px 0px;
     background: #494F51;
 }
+
+/* verificando errores en los formularios */
+
+.error{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    position: relative;
+}
+.error input, .error textarea, .error select{
+    border: #f20736 3px solid;
+}
+fieldset small, fieldset i[class = "fas fa-exclamation-circle"]{display: none;}
+
+.error i[class = "fas fa-exclamation-circle"]{
+    display: block;
+    color: #f20736;
+    background-color: #fff;
+    position: absolute;
+    right: 8%;
+    top: 30%;
+}
+.error small, form small{
+    width: 100%;
+    text-align: left;
+    margin-left: 8px;
+    margin-top: 5px;
+    font-style: italic;
+    display: block;
+    color: #f20736;
+    font-size: .9rem;
+}
+
