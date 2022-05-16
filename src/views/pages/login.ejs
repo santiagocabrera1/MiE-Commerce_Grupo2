@@ -1,48 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('../partials/head') %>
-<body>
+<%- include('../partials/head') %>
 
-    <header>
-        <div class="headerContainer">
-            <a href="/" class="text-logo">
-                <p>Mi<span>Ecommerce</span></p>
-            </a>
-        </div>
-    </header>
+    <body>
+        <div class="ventanaEmergente">
+        <%- include('../partials/modalError') %>
 
-    <main class="registerLoginMain">
+    </div>
 
-        <section class="registerForm">
+        <header>
+            <div class="headerContainer">
+                <a href="/" class="text-logo">
+                    <p>Mi<span>Ecommerce</span></p>
+                </a>
+            </div>
+        </header>
 
-            <h2>¡Hola!</h2>
+        <main class="registerLoginMain">
+
+            <section class="registerForm">
+
+                <h2>¡Hola!</h2>
                 <form action="/register" method="post">
                     <input class="inPut" type="name" name="name" placeholder="Tu nombre de usuario">
-                    <input  class="inPut" type="password" name="key" placeholder="Tu contraseña">
-                <button class="btn" type="submit">Crear cuenta</button>
-            </form>
-            
-        </section>
+                    <input class="inPut" type="password" name="key" placeholder="Tu contraseña">
+                    <button class="btn" type="submit">Crear cuenta</button>
+                </form>
 
-        <div class="account">
-            <p>¿No tienes cuenta?  <a href="/register">Registrate</a></p>
-        </div>
-        
-    </main>
+            </section>
 
+            <div class="account">
+                <p>¿No tienes cuenta? <a href="/register">Registrate</a></p>
+            </div>
 
-    <%- include('../partials/footer') %>
-
-   
-    
-    
+        </main>
 
 
-    
+        <%- include('../partials/footer') %>
 
+    </body>
 
-
-
-    
-</body>
 </html>
