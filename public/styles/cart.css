@@ -88,11 +88,11 @@ main section .products article div:last-child{
     position: absolute;
 }
 .cantidad-products .mas{
-    top: 10%;
+    top: -70%;
     right: 18%;
 }
 .cantidad-products .menos{
-    top: 10%;
+    top: -70%;
     left: 20%;
 }
 

@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('../partials/head') %>
-<body>
-    <%- include('../partials/header') %>
-    <div class="container-products">
-        <section class="detalle-producto">
-            <article class="producto-img-txt">
-                <div class="producto-img-container">
-                    <img class="producto-imagen" src="<%= product.image %>" alt="<%= product.title  %>">
-                </div>
-            <div class="producto-caracteristicas">
-                <h3><%= product.title  %> </h3>
-                <span class="bold"> <%= product.price %> </span> 
-                <span>PUNTOS</span>
+<%- include('../partials/head') %>
 
-                <form action="/cart/addProduct" method="post">
-                    <input name="product" type="hidden" value="<%= product %> "> 
-                    <button type="submit" class="agrega-carrito">Agregar al Carrito</button>
-                </form>
+    <body>
+        <%- include('../partials/header') %>
+            <main class="product-detail">
+                <section class="detalle-producto">
+                    <article class="producto">
+                        <h4><%= product.title %></h4>
+                        <div class="producto-img-container">
+                            <img class="producto-imagen" src="<%= product.image %>" alt="<%= product.title  %>">
+                            <ul>
+                                <li><img src="<%= product.image %>" alt="<%= product.title  %>"></li>
+                                <li><img src="/images/products/default-product.png" alt="default-product"></li>
+                                <li><img src="/images/products/default-product.png" alt="default-product"></li>
+                            </ul>
+                        </div>
+                        <div class="producto-caracteristicas">
+                            <p class="title"><%= product.title %></p>
+                            <p><span class="bold"><%= product.price %></span> PUNTOS</p>
+                            <p class="description"> <%= product.description %></p>
+                            
+                            <form action="/cart/addProduct" method="post">
+                                <input name="product " type="hidden" value="<%= product %> ">
+                                <button type="submit">Agregar al Carrito</button>
+                            </form>
+                        </div>
+                    </article>
+                </section>
 
-                <p>
-                    <%= product.description %>
-                </p>
-            </div>
-            </article>
-            <h3>Tambien te puede interesar</h3>
+                <section class="interes">
+                    <h3>Tambien te puede interesar</h3>
+                    
+                    <article class="products-card">
+                        
+                        
+                        <% relacionados.forEach((product)=> { %>
+                            <%- include('../partials/card', product) %>
+                        <% }) %>
+                    </article>
+                </section>
 
-            <article class="products-card">
-                <% relacionados.forEach((product) => { %> 
-                    <%- include('../partials/card', product) %>            
-                <% }) %> 
-            </article>
-        </section>
-
-    </div>
-    <%- include('../partials/list') %>
-    <%- include('../partials/footer') %>
-</body>
+            </main>
+            <%- include('../partials/list') %>
+                <%- include('../partials/footer') %>
+    </body>
 
 </html>
-
-
-
-
-
-

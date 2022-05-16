@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700;800&family=Roboto:wght@100;700;900&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
 :root{
     --principal-white: rgba(255,255,255,1);
     --principal-lightGrey: rgba(153,153,153,1);
@@ -9,30 +13,24 @@
     --principal-red: rgba(255,0,0,1);
 }
 
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.headerContainer{
-    background-color: gba(255, 255, 255, 0.25);
-    padding: 16px 16px;
-    backdrop-filter: blur(4px)
-}
 
 main{
     background: repeating-linear-gradient( var(--principal-white) 0, var(--principal-white) 50%,  var(--principal-green) 0, var(--principal-green) 97%, var(--principal-white) 0, var(--principal-white));
     padding-top: 20px;
     min-height: 82.5vh;
-    background-attachment: fixed
+    background-attachment: fixed;
 }
 
-.account{
-    display: flex;
-    justify-content: center;
-    padding: 15px 10px;
-    margin: 15px 0px;
+.btn{
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+    background-color: var(--principal-darkGrey);
+    transition: all ease-in-out .25s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--principal-green);
 }
 

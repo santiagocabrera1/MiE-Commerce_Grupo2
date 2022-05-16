@@ -1,31 +1,29 @@
-
 <header class="header-principal">
     <div class="header-container">
-        <a href="/" class="link-logo">
-            <img src="/images/MiEcommerce.png" alt="logo MiEcommerce">
+        <a href="/" class="text-logo">
+            <p>Mi<span>E</span><span>commerce</span></p>
         </a>
-        
-        
+
+
         <form action="search" class="busqueda-header">
             <input type="search" placeholder="Buscar productos...">
             <button type="submit">
-            <%- include('../../../public/images/magnify.svg') %>
+                <i class="fa-solid fa-magnifying-glass"></i>
             </button>
         </form>
-        
+
         <div class="links-header">
             <div class="link-carrito">
-                <a href="/cart">
-                    <%- include('../../../public/images/cart-plus.svg') %>
+                <a href="/cart" class="btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
                 </a>
-                <span class="carrito-notificacion"></span>
+                <span class="carrito-notificacion">1</span>
             </div>
-            
-            <a class="link-perfil" href="/login">
+
+            <a class="link-perfil btn" href="/login"> 
                 <img src="/images/olivia.png" alt="Imagen de perfil del usuario">
-                <span>Olivia</span> 
-            </a>  
+                <span>Olivia</span>
+            </a>
         </div>
     </div>
 </header>
-
