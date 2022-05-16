@@ -42,7 +42,7 @@
 
 
 
-/* fomulario de busqueda */
+/* formulario de busqueda */
 .busqueda-header {
     position: relative;
     width: 60%;
@@ -151,6 +151,45 @@
     .text-logo >p span:nth-child(2){
         display: inline;
     }
+<<<<<<< HEAD
+=======
+    
+    .link-carrito {
+        position: relative; 
+    }
+    
+    .link-carrito a {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        
+        color: var(--principal-lightGrey);  
+        font-size: 14px;
+        background-color: var(--principal-darkGrey);
+        border-radius: 50%;
+        text-decoration: none;
+    }
+    
+    .link-carrito svg {
+        fill: var(--principal-white);
+        width: 20px;
+    }   
+    
+    .carrito-notificacion {
+        position: absolute;
+        display: block;
+        width: 8px;
+        height: 8px;
+        top: 0;
+        right: 0;
+        font-size: 6px;
+        background-color: var(--principal-red);
+        border-radius: 50%;
+    }
+    
+>>>>>>> 23f216a366474fd79546068b3b3b0f25edae6b1e
     .link-perfil {
         gap: 6px;
         width: min-content;
@@ -165,6 +204,7 @@
     }
     
 }
+<<<<<<< HEAD
 
 .link-perfil {
     gap: 6px;
@@ -198,3 +238,5 @@
     /*display: none;*/
     
 }
+=======
+>>>>>>> 23f216a366474fd79546068b3b3b0f25edae6b1e
