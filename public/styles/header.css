@@ -129,23 +129,3 @@
         border-radius: 50%;
     }
     
-    .link-perfil {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        width: min-content;
-        height: 30px;
-        background-color: var(--principal-darkGrey);
-        border-radius: 20px;
-        padding: 0 12px 0 2px;
-        color: white;
-        font-size: 12px;
-        text-decoration: none;
-    }
-    
-    .link-perfil img {
-        display: block;
-        width: 24px;
-        height: 24px;  
-        border-radius: 50%;
-    }
