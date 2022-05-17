@@ -14,7 +14,7 @@
     color: white;
 }
 
-.dark .card__section,.registerForm,.producto,main section .products article{
+.dark .card__section,.registerForm,.producto,main section .products article,.sidebar{
     background-color: #494F51;
 
 }
