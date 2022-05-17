@@ -1,30 +1,8 @@
-
-<section class="side_menu">
-    <div id="sidebar">
-
-        <div class="toggle-btn link-perfil ">
-            <img src="/images/olivia.png" alt="Imagen de perfil del usuario">
-            <a href="/login"> <span>Olivia</span> </a> 
-        </div>
-
-        <ul>
-            <li> <a href="#"></a>Inicio</li>
-            <li> <a href="#"></a>Mis Compras</li>
-            <li> <a href="#"></a>Favoritos</li>
-            <li> <a href="#"></a>Historial</li>
-            <li> <a href="#"></a>Cambiar a Tema Claro</li>
-        </ul>
-        
-    </div>
-</section>
-
 <header class="header-principal">
     <div class="header-container">
         <a href="/" class="text-logo">
             <p>Mi<span>E</span><span>commerce</span></p>
         </a>
-
-
         <form action="search" class="busqueda-header">
             <input type="search" placeholder="Buscar productos...">
             <button type="submit">
@@ -34,12 +12,32 @@
 
         <div class="links-header">
             <div class="link-carrito">
+                
                 <a href="/cart" class="btn">
                     <i class="fa-solid fa-cart-shopping"></i>
                 </a>
                 <span class="carrito-notificacion">1</span>
             </div>
+            <div class="perfil-nav">
+                <button class="link-perfil" id="perfil-btn">
+                    <img src="/images/olivia.png" alt="Imagen de perfil del usuario">
+                    <span>Olivia</span> 
+                </button>
+                <div class="sidebar">
+                    <div class="sidebar-profile" id="sidebar-btn">
+                        <img src="/images/olivia.png" alt="Imagen de perfil del usuario">
+                        <span>Olivia</span>
+                    </div>
+                    <ul>
+                        <li> <a href="/">Inicio</a></li>
+                        <li> <a href="#">Mis Compras</a></li>
+                        <li> <a href="#">Favoritos</a></li>
+                        <li> <a href="#">Historial</a></li>
+                        <li> <a href="#"><i class="fa-solid fa-dharmachakra"></i>Cambiar a Tema Claro</a></li>
+                    </ul>
+                    
+                </div>
+            </div>        
         </div>
-
     </div>
 </header>

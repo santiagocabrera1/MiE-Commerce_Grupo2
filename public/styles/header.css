@@ -23,6 +23,7 @@
 
 
 /* Logo de MiEcommerce */
+
 .text-logo {
     text-decoration: none;
     color: #0CB093;
@@ -133,6 +134,14 @@
     width: 30px;
     border-radius: 50%;
     text-decoration: none;
+    border: none;
+    color: var(--principal-white);
+    background-color: var(--principal-darkGrey);
+    cursor: pointer;
+}
+
+.perfil-nav .link-perfil:hover {
+    background-color: var(--principal-green);
 }
 
 .link-perfil img {
@@ -147,49 +156,13 @@
 }
 
 
+
+
+
 @media(min-width: 768px) {
     .text-logo >p span:nth-child(2){
         display: inline;
     }
-<<<<<<< HEAD
-=======
-    
-    .link-carrito {
-        position: relative; 
-    }
-    
-    .link-carrito a {
-        display: flex;
-        width: 30px;
-        height: 30px;
-        align-items: center;
-        justify-content: center;
-        
-        color: var(--principal-lightGrey);  
-        font-size: 14px;
-        background-color: var(--principal-darkGrey);
-        border-radius: 50%;
-        text-decoration: none;
-    }
-    
-    .link-carrito svg {
-        fill: var(--principal-white);
-        width: 20px;
-    }   
-    
-    .carrito-notificacion {
-        position: absolute;
-        display: block;
-        width: 8px;
-        height: 8px;
-        top: 0;
-        right: 0;
-        font-size: 6px;
-        background-color: var(--principal-red);
-        border-radius: 50%;
-    }
-    
->>>>>>> 23f216a366474fd79546068b3b3b0f25edae6b1e
     .link-perfil {
         gap: 6px;
         width: min-content;
@@ -204,39 +177,93 @@
     }
     
 }
-<<<<<<< HEAD
 
-.link-perfil {
-    gap: 6px;
-    width: min-content;
-    border-radius: 20px;
-    padding: 6px;
-    padding: 0 12px 0 2px;
-    font-size: 12px;
-    font-weight: 100;
-}
-.link-perfil > span{
-    display: block;
-}
 
-/* Modal menu */
+/* Menu mobile y desktop*/
 
-.modalMenu{
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    margin: auto;
-    text-align: center;
+.sidebar {
+    position: fixed;
+    right: -100vw;
+    transition: all 0.3s ease-in;
+    transition-delay: 0.5s;
+    opacity: 0;
+    top: 0;
+    background: var(--principal-white);
     width: 90vw;
-    max-width: 400px;
-    height: 150px;
-    background-color: white;
-    border-radius: 1rem;
-    font-size: 1rem;
-    padding: 1rem;
-    margin-top: 1rem;
-    /*display: none;*/
+    height: 100vh;
+    border-radius: 16px 0px 0px 16px;
+    color: var(--principal-black);
+}
+
+.sidebar-profile {
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+    gap: 10px;
+}
+.sidebar-profile img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.sidebar ul {
+    border-top: 1px solid var(--principal-lightGrey);
+}
+
+.sidebar li {
+    padding: 15px 0 15px 60px;
+}
+
+.sidebar li:last-child {
+    border-top: 1px solid var(--principal-lightGrey);
+    padding-left: 30px;
+
+}
+
+.sidebar a, .sidebar a:active, .sidebar a:focus {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: var(--principal-black);
     
 }
-=======
->>>>>>> 23f216a366474fd79546068b3b3b0f25edae6b1e
+
+.sidebar.opened {
+    right: 0;
+    opacity: 1;
+}
+
+.perfil-nav {
+    position: relative;
+} 
+
+
+@media (min-width: 768px) {
+    .sidebar {
+        position: absolute;
+        background: var(--principal-white);
+        width: 240px;
+        height: 220px;
+        right: 0;
+        top: 60px;
+        border-radius: 16px;
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    }
+    
+    .sidebar-profile {
+        padding: 10px 20px;
+    }
+
+    .sidebar li {
+    padding: 5px 0 5px 30px;
+    }
+    .sidebar li:last-child {
+        padding-left: 15px;
+    
+    }
+
+
+}
+
