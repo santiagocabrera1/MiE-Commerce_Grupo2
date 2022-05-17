@@ -155,10 +155,6 @@
     display: none;
 }
 
-
-
-
-
 @media(min-width: 768px) {
     .text-logo >p span:nth-child(2){
         display: inline;
@@ -177,7 +173,6 @@
     }
     
 }
-
 
 /* Menu mobile y desktop*/
 
