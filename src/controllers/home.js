@@ -6,7 +6,8 @@ module.exports = {
         const products = await model.findAll()
         const destacados = products.slice(0, 4)
         const mostwanted = await model.findMostwanted()
-        res.render("./pages/index", { destacados, mostwanted: mostwanted.slice(0, 8)});
+        console.log(req.session);
+        res.render("./pages/index", { destacados, mostwanted: mostwanted.slice(0, 8), user: req.session.userLogged });
     }
     
 }

@@ -2,6 +2,8 @@
 const express = require("express");
 const app = express()
 const path = require("path")
+const session = require("express-session");
+const cookieParser = require('cookie-parser')
 
 // Puerto del servidor
 const PORT = process.env.PORT || 3000
@@ -21,6 +23,15 @@ app.set("views", "./src/views");
 // para que los formularios accepten json
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
+
+//
+app.use(session({
+    secret: "Ecommmerce",
+    resave: false,
+    saveUninitialized: true
+}))
+
+app.use(cookieParser())
 
 // rutas de la pagina
 app.use(require("./src/routers/home"));

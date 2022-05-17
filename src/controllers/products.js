@@ -8,10 +8,11 @@ module.exports = {
     indexCart: (req,res)=>{
         res.render("./pages/cart");
     },
-    detail: (req,res) => {
+    detail: async(req,res) => {
         const {id} = req.params; 
-        const product = model.findOne(id);
-        const relacionados = model.findAll().slice(0,4);
+        const product = await model.findOne(id);
+        const products = await model.findAll();
+        const relacionados = products.slice(0,4);
         if (product) {
             res.render("./pages/product-detail", {product, relacionados})
         } else {        
