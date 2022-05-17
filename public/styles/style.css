@@ -15,7 +15,7 @@
 }
 
 
-main{
+.mainIndex{
     background: repeating-linear-gradient( var(--principal-white) 0, var(--principal-white) 50%,  var(--principal-green) 0, var(--principal-green) 97%, var(--principal-white) 0, var(--principal-white));
     padding-top: 20px;
     min-height: 82.5vh;

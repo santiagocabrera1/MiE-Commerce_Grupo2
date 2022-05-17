@@ -1,12 +1,49 @@
-.dark header{
-    background-color: #222222;
-}
+/* comienza el nav  */
 
-.dark  button[type = "submit"]{
+.dark .headerContainer,.header-principal{
     background-color: black;
 }
 
-.dark .headerContainer{
-    background-color: black;
+/* comienza el main  */
+
+.dark .mainIndex{
+    background: repeating-linear-gradient( #181818 0, #181818 50%,  var(--principal-green) 0, var(--principal-green) 97%, #181818 0 , #181818);
+
 }
-/* comienza el nav */
+.dark .content-products,.card__section-div a,.interes h3,article h2,article > a ,.account,.bold,.description,.producto-caracteristicas > p,.card__section-puntos,.card__section-div > p,.producto > h4,.card__section-div > h3> a, main > section > h2,main >section> a > i,article > div > p,.menos,.mas,.cantidad-products > input[type = "number"],section > p{
+    color: white;
+}
+
+.dark .card__section,.registerForm,.producto,main section .products article{
+    background-color: #494F51;
+
+}
+
+.dark .registerLoginMain{
+    background: linear-gradient(to bottom, #0CB093, #0CB093 50%, #181818 5%, #181818 75%);
+}
+
+.dark input{
+    background-color: #494F51;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.dark  button[type = "submit"],.mainCart{
+    background-color: #181818
+}
+
+.dark  main > .sectionMain ul{
+    background-color: #333333;
+
+}
+.product-detail{
+     background-color: #181818 ;
+
+}
+
+
+/* comienza el footer  */
+.dark footer{
+    background-color: #181818
+
+}
