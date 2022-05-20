@@ -3,13 +3,14 @@ const fs = require("fs");
 const path = require("path");
 const bcrypt = require("bcryptjs")
 
+
 module.exports = {
     indexRegister: (req,res)=>{
         res.render("./pages/register", {errors: {}, oldData: {}});
     },
 
     indexLogin : (req,res)=>{
-        res.render("./pages/login");
+        res.render("./pages/login", {errors: {}, oldData: {}});
     },
 
     register:(req,res) =>{
@@ -36,6 +37,39 @@ module.exports = {
         }
 
 
+    },
+    loginProccess: (req,res) => {
+        let error = validationResult(req);
+        if(!error.isEmpty()){
+            return res.render("./pages/login", { 
+                errors: error.mapped(),
+                oldData: req.body
+            })
+        }  else {
+            const userToLogin = JSON.parse( fs.readFileSync(path.resolve(__dirname, "../data/users.json"))).find(user => user.email == req.body.email);
+            if(userToLogin && bcrypt.compareSync( req.body.password , userToLogin.password)){
+                delete userToLogin.password;
+                console.log(userToLogin);
+                req.session.userLogged =  userToLogin;
+                res.cookie("user", userToLogin,{maxAge: 60 * 1000 * 60});
+                return res.redirect("/")
+            } else {
+                let errors = {
+                    password:{
+                        msg:'Contraseña incorrecta'
+                    }
+                }
+                if (!userToLogin) {
+                    errors.email = {
+                        msg: "El usuario no existe"
+                    }
+                }
+                return res.render("./pages/login", {
+                    errors,
+                    oldData: req.body
+                })
+            }
+        }
     }
 
 }

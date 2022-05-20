@@ -4,9 +4,8 @@
 
     <body>
         <div class="ventanaEmergente">
-        <%- include('../partials/modalError') %>
-
-    </div>
+            <%- include('../partials/modalError') %>
+        </div>
 
         <header>
             <div class="headerContainer">
@@ -15,15 +14,28 @@
                 </a>
             </div>
         </header>
-
         <main class="registerLoginMain">
 
             <section class="registerForm">
 
                 <h2>¡Hola!</h2>
-                <form action="/register" method="post">
-                    <input class="inPut" type="name" name="name" placeholder="Tu nombre de usuario">
-                    <input class="inPut" type="password" name="key" placeholder="Tu contraseña">
+                <form action="/login" method="post">
+                    <fieldset class="<%=errors.email && "error" %>">
+                        <input  type="email" name="email" placeholder="Tu email"
+                            value= <%=oldData.email && oldData.email %>
+                        >
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>
+                            <%= errors.email && errors.email.msg %>
+                        </small>
+                    </fieldset>
+                    <fieldset  class="<%=errors.password && "error" %>">
+                        <input  type="password" name="password" placeholder="Tu contraseña">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>
+                            <%= errors.password && errors.password.msg %>
+                        </small>
+                    </fieldset>
                     <button class="btn" type="submit">Crear cuenta</button>
                 </form>
 
