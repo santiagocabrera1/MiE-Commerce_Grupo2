@@ -14,6 +14,8 @@ router.get('/', controller.indexCart);
 
 
 router.post('/addProduct', function(req,res) {
+    console.log(req.session.userLogged);
+    
     const cart = fs.read.writeFileSync(path.join(__dirname, "../data/cart.json"));
         res.json(req.body);    
         res.json(req.body);
